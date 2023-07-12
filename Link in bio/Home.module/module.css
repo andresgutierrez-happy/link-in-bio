@@ -1,0 +1,121 @@
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top:124px;
+  padding-bottom:30px;
+}
+
+.profile-image {
+  width: 238px;
+  height: 238px;
+}
+
+.profile-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100%
+}
+
+.profile-name h1 {
+  color: #14003D;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.profile-description {
+  text-align: center;
+  display: flex;
+  max-width: 974px;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.profile-description p {
+  margin-bottom: 52px;
+  color: #636363;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.profile-button {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 18.038px 46.385px;
+  gap: 10.308px;
+  border-radius: 10.308px;
+  background: #14003D;
+  color: #fff;
+  text-decoration: none;
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 20.615px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30.923px;
+  margin-bottom:64px;
+}
+.profile-button:hover {
+  transform: scale(0.98);
+  transition: transform 0.5s ease;
+}
+
+.social-icons {
+  display: flex;
+  gap: 48px;
+}
+
+.social-icons .content-icon {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a img {
+  width:100%;
+  object-fit:contain;
+}
+
+
+@media (max-width: 1024px) {
+  .profile-section {
+  padding-left:30px;
+  padding-right:30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+  padding-left:15px;
+  padding-right:15px;
+  }
+  .profile-image {
+  width: 125px;
+  height: 125px;
+}
+  .profile-name h1 {
+  font-size: 25.367px;
+  line-height: 30.652px;
+}
+  .social-icons {
+  gap: 25px;
+}
+  .social-icons .content-icon {
+  width: 22px;
+  height: 22px;
+}
+  .profile-description p {
+  font-size: 16px;
+  line-height: 26px;
+  text-wrap:balance;
+  }
+}

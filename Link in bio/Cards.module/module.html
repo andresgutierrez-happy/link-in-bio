@@ -1,0 +1,15 @@
+<div class="container-cards">
+  {% for item in module.card %}
+<div class="card">
+  <div class="card-image" style="background-image: url({{ item.card_image.src }});background-size: cover;"></div>
+  <div class="card-content">
+    <h3 class="card-title">
+      {{ item.card_title }}
+    </h3>
+    <p class="card-body">
+      {{ item.card_body }}
+    </p>
+  </div>
+</div>
+  {% endfor %}
+</div>

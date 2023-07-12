@@ -1,0 +1,28 @@
+<section class="profile-section">
+<div class="profile-image">
+	<img src="{{ module.profile_info.profile_image.src }}" alt="{{ module.profile_info.profile_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  </div>
+<div class="profile-name">
+    <h1>{{ module.profile_info.profile_name }}</h1>
+</div>
+<div class="profile-description">
+  <p>{{ module.profile_info.profile_description }}</p>
+  
+</div>
+  {% set href = module.profile_info.link_button.url.href %}
+{% if module.profile_info.link_button.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+  <a href="{{ href }}" class="profile-button">{{ module.profile_info.text_button }}</a>
+<div class="social-icons">
+  {% for item in module.profile_info.social_icons %}
+  {% set href = item.social_link.url.href %}
+	{% if item.social_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+	{% endif %}
+   <div class="content-icon">
+      <a href="{{ href }}"><img src="{{ item.social_icon.src }}" alt="{{ item.social_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}></a>
+  </div>     
+  {% endfor %}
+</div>
+</section>

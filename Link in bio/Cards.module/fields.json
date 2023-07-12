@@ -1,0 +1,90 @@
+[ {
+  "id" : "e5230b6a-3ac6-430b-148e-5ea409f7f4d2",
+  "name" : "card",
+  "display_width" : null,
+  "label" : "Card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "aa1efaca-aa73-b301-79b5-f89d1473b80a",
+    "name" : "card_image",
+    "display_width" : null,
+    "label" : "Card image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/Rectangle%20106.png",
+      "alt" : "Rectangle 106",
+      "loading" : "lazy",
+      "width" : 454,
+      "height" : 207,
+      "max_width" : 454,
+      "max_height" : 207
+    }
+  }, {
+    "id" : "78db59ec-b294-57e5-5c5b-9b1777ba6d75",
+    "name" : "card_title",
+    "display_width" : null,
+    "label" : "Card title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem Ipsum"
+  }, {
+    "id" : "959817e6-08c9-043f-3d4a-46cc91b7491a",
+    "name" : "card_body",
+    "display_width" : null,
+    "label" : "Card body",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/Rectangle%20106.png",
+      "alt" : "Rectangle 106",
+      "loading" : "lazy",
+      "width" : 454,
+      "height" : 207,
+      "max_width" : 454,
+      "max_height" : 207
+    },
+    "card_title" : "Lorem Ipsum",
+    "card_body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus."
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/Rectangle%20106.png",
+      "alt" : "Rectangle 106",
+      "loading" : "lazy",
+      "width" : 454,
+      "height" : 207,
+      "max_width" : 454,
+      "max_height" : 207
+    },
+    "card_title" : "Lorem Ipsum",
+    "card_body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus."
+  } ]
+} ]

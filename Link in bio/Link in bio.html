@@ -1,0 +1,39 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
+    <meta name="description" content="{{ content.meta_description }}">
+    {% if brand_settings.primaryFavicon.src %}
+      <link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    {% endif %}
+    <style>
+      *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      }
+      body{
+      background-color: #F2E8FF;
+      }
+    </style>
+    {{ standard_header_includes }}
+  </head>
+  <body>
+    
+    {% module "module_16891081236407" path="/Hubspot - CMS - Andres/Link in bio/Header", label="Header" %}
+    {% module "module_16890938718093" path="/Hubspot - CMS - Andres/Link in bio/Home", label="Home" %}
+    {% module "module_168909745163523" path="/Hubspot - CMS - Andres/Link in bio/CTA", label="CTA" %}
+    {% module "module_16890987879119" path="/Hubspot - CMS - Andres/Link in bio/Cards", label="Cards" %}
+    {% module "module_168909923923415" path="/Hubspot - CMS - Andres/Link in bio/Footer", label="Footer" %}
+
+    {{ standard_footer_includes }}
+  </body>
+</html>

@@ -1,0 +1,208 @@
+[ {
+  "id" : "a190eff7-f447-4ae5-c773-d7d494506d5a",
+  "name" : "profile_info",
+  "display_width" : null,
+  "label" : "Profile info",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "03ff785b-6b1d-0913-5f41-be72cd1ff66f",
+    "name" : "profile_image",
+    "display_width" : null,
+    "label" : "Profile image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/image%203.png",
+      "alt" : "image 3",
+      "loading" : "lazy",
+      "width" : 302,
+      "height" : 302,
+      "max_width" : 302,
+      "max_height" : 302
+    }
+  }, {
+    "id" : "fd2f2518-138b-cf97-cf05-bd28fb85cca6",
+    "name" : "profile_name",
+    "display_width" : null,
+    "label" : "Profile name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Mariana Williams"
+  }, {
+    "id" : "ca8c2714-9e4f-eb28-afd9-ecaf63fc1027",
+    "name" : "profile_description",
+    "display_width" : null,
+    "label" : "Profile description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus."
+  }, {
+    "id" : "2b941222-912e-d522-722b-5ac9a788dc51",
+    "name" : "text_button",
+    "display_width" : null,
+    "label" : "Text button",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Contact us"
+  }, {
+    "id" : "1b1764a2-c4a2-ee1e-a04f-710411cd231d",
+    "name" : "link_button",
+    "display_width" : null,
+    "label" : "Link button",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "cdf578c3-6ef8-b597-707f-83f0052d15d5",
+    "name" : "social_icons",
+    "display_width" : null,
+    "label" : "Social icons",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "bbac15b6-2724-a90d-5828-32040b6d44e0",
+      "name" : "social_icon",
+      "display_width" : null,
+      "label" : "Social icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/symbol.png",
+        "alt" : "Facebook",
+        "loading" : "lazy",
+        "width" : 43,
+        "height" : 42,
+        "max_width" : 43,
+        "max_height" : 42
+      }
+    }, {
+      "id" : "b23be8f0-29a4-a18d-779b-b667735eec28",
+      "name" : "social_link",
+      "display_width" : null,
+      "label" : "Social link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "social_icon" : {
+        "size_type" : "auto",
+        "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/symbol.png",
+        "alt" : "Facebook",
+        "loading" : "lazy",
+        "width" : 43,
+        "height" : 42,
+        "max_width" : 43,
+        "max_height" : 42
+      },
+      "social_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "profile_image" : {
+      "size_type" : "auto",
+      "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/image%203.png",
+      "alt" : "image 3",
+      "loading" : "lazy",
+      "width" : 302,
+      "height" : 302,
+      "max_width" : 302,
+      "max_height" : 302
+    },
+    "profile_name" : "Mariana Williams",
+    "profile_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tortor feugiat, malesuada ex eu, porttitor tellus.",
+    "text_button" : "Contact us",
+    "link_button" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "social_icons" : [ {
+      "social_icon" : {
+        "size_type" : "auto",
+        "src" : "https://22529421.fs1.hubspotusercontent-na1.net/hubfs/22529421/symbol.png",
+        "alt" : "Facebook",
+        "loading" : "lazy",
+        "width" : 43,
+        "height" : 42,
+        "max_width" : 43,
+        "max_height" : 42
+      },
+      "social_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+} ]

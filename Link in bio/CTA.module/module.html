@@ -1,0 +1,15 @@
+<div class="button-container">
+  {% for item in module.ctas %}
+
+	{% set href = item.link_cta.url.href %}
+	{% if item.link_cta.url.type is equalto "EMAIL_ADDRESS" %}
+		{% set href = "mailto:" + href %}
+	{% endif %}
+<a class="custom-button" href="{{ href }}" >
+    <div class="content">
+        <div class="title">{{ item.title }}</div>
+        <div class="description">{{ item.description }}</div>
+    </div>
+</a>
+  {% endfor %}
+</div>
